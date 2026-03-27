@@ -54,13 +54,47 @@ export default function Home() {
               回答3-5个问题，为您推荐最适合的智能协作方案。
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="#recommend" className="btn-primary text-lg px-8 py-4">
-                开始智能推荐
-                <ArrowRight className="w-5 h-5 ml-2" />
+            {/* 双入口设计 */}
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
+              {/* 入口 1: 智能推荐 */}
+              <Link href="#recommend" className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all text-left">
+                <div className="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+                  <Sparkles className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">方式一：智能推荐</h3>
+                <p className="text-slate-600 mb-4">
+                  回答 3 个问题，根据您的技术需求和协作方式，为您推荐最适合的模式
+                </p>
+                <div className="flex items-center text-primary-600 font-medium">
+                  开始推荐
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
               </Link>
-              <Link href="/modes" className="btn-secondary text-lg px-8 py-4">
-                浏览所有模式
+
+              {/* 入口 2: 按场景选择 */}
+              <Link href="/scenarios" className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all text-left">
+                <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+                  <BookOpen className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">方式二：按场景选择</h3>
+                <p className="text-slate-600 mb-4">
+                  按教学、科研、专项、日常四大领域，40+场景快速定位您的需求
+                </p>
+                <div className="flex items-center text-accent-600 font-medium">
+                  查看场景
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+            </div>
+
+            {/* 快捷链接 */}
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <Link href="/modes" className="text-slate-500 hover:text-slate-700 transition-colors">
+                浏览所有模式 →
+              </Link>
+              <span className="text-slate-300">|</span>
+              <Link href="/guide" className="text-slate-500 hover:text-slate-700 transition-colors">
+                使用指南 →
               </Link>
             </div>
           </motion.div>
