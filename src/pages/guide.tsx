@@ -338,6 +338,85 @@ ${mode.triggers.slice(0, 3).map(t => `  - "${t}"`).join('\n')}
           )}
         </motion.div>
 
+        {/* 重要提示：身份混淆与部署原则 */}
+        <div className="mt-12 bg-red-50 rounded-2xl p-8 border-2 border-red-200">
+          <h3 className="text-xl font-bold text-red-900 mb-4 flex items-center gap-2">
+            <span>⚠️</span> 重要：避免身份混淆
+          </h3>
+          
+          <div className="space-y-4 text-red-800">
+            <div className="bg-white rounded-xl p-4 border border-red-100">
+              <h4 className="font-semibold text-red-900 mb-2">核心原则</h4>
+              <p className="text-sm"><strong>一个 OpenClaw 实例只配置一种多智能体协作模式。</strong></p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-white rounded-xl p-4 border border-red-100">
+                <h4 className="font-semibold text-red-900 mb-2">❌ 错误做法</h4>
+                <ul className="text-sm space-y-1">
+                  <li>• 一个实例同时配置多种模式</li>
+                  <li>• 触发词冲突</li>
+                  <li>• 身份机制不统一</li>
+                  <li>• 上下文污染</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-4 border border-red-100">
+                <h4 className="font-semibold text-green-900 mb-2">✅ 正确做法</h4>
+                <ul className="text-sm space-y-1">
+                  <li>• 选择一种最适合的模式</li>
+                  <li>• 当前实例只配置这一种</li>
+                  <li>• 统一身份配置机制</li>
+                  <li>• 需要多种模式时创建新实例</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-amber-50 rounded-lg p-4 border border-amber-200">
+              <p className="text-sm text-amber-800">
+                <strong>Teacher Hub Skill 的正确使用方式：</strong>本技能仅作为"模式选择工具"，帮助您了解各模式特点并选择最适合的一种。选择后，请只配置并使用这一种模式。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 模式替代性说明 */}
+        <div className="mt-8 bg-blue-50 rounded-2xl p-8 border-2 border-blue-200">
+          <h3 className="text-xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+            <span>💡</span> 模式替代性说明
+          </h3>
+          
+          <div className="space-y-4 text-blue-800">
+            <p className="text-sm"><strong>后四种模式可以互相替代完成多智能体协作任务，但各有"最佳舒适区"。</strong></p>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-white rounded-xl p-4 border border-blue-100">
+                <h4 className="font-semibold text-blue-900 mb-2">按需求选择</h4>
+                <ul className="text-sm space-y-1">
+                  <li>• <strong>不想配置飞书</strong> → 模式二（文件黑板）</li>
+                  <li>• <strong>快速验证/原型</strong> → 模式三-A（单机器人）</li>
+                  <li>• <strong>正式生产项目</strong> → 模式三-B（多群组团队）</li>
+                  <li>• <strong>多维度评审讨论</strong> → 模式四（话题团队）</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-xl p-4 border border-blue-100">
+                <h4 className="font-semibold text-blue-900 mb-2">成本与效果权衡</h4>
+                <ul className="text-sm space-y-1">
+                  <li>• <strong>模式二</strong>：成本低，适合原型/个人</li>
+                  <li>• <strong>模式三-A</strong>：成本中等，适合验证/小团队</li>
+                  <li>• <strong>模式三-B</strong>：成本高，适合生产/大团队</li>
+                  <li>• <strong>模式四</strong>：成本中等，适合评审/决策</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg p-4 border border-blue-100">
+              <p className="text-sm text-blue-800">
+                <strong>建议：</strong>如果不确定，建议先用模式二或三-A验证效果，再决定是否升级到更复杂的模式。选错了没关系，可以从简单的开始，随时升级。
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Additional Resources */}
         <div className="mt-12 grid md:grid-cols-3 gap-4">
           <Link
