@@ -62,10 +62,10 @@
           "demo": "examples/social_science_demo.py"
         },
         {
-          "name": "教师流水线Agent",
-          "path": "extensions/teacher-pipeline-agent",
-          "description": "面向高校教师的顺序多智能体协作系统",
-          "demo": "examples/teacher_pipeline_demo.py"
+          "name": "微信文章发布流水线",
+          "path": "workspace/wechat_pipeline_clean",
+          "description": "从工作日志到微信公众号文章的自动化流程",
+          "demo": "examples/wechat_pipeline_demo.py"
         }
       ],
       "installation": {
@@ -153,6 +153,12 @@
           "path": "extensions/lesson-prep-agent",
           "description": "基于File Blackboard的备课自动化解决方案",
           "demo": "examples/lesson_prep_demo.py"
+        },
+        {
+          "name": "科研课题申报智能体团队",
+          "path": "extensions/research-proposal-agent",
+          "description": "5个Workers并行准备申报材料",
+          "demo": "examples/research_proposal_demo.py"
         }
       ],
       "installation": {
@@ -242,6 +248,12 @@
           "path": "extensions/personal-multi-role",
           "description": "教学+科研+行政+生活四合一助手",
           "demo": "examples/personal_multi_role_demo.py"
+        },
+        {
+          "name": "课程平行班管理",
+          "path": "extensions/parallel-classes",
+          "description": "1个Bot同时管理多个平行班级",
+          "demo": "examples/parallel_classes_demo.py"
         }
       ],
       "installation": {
@@ -337,7 +349,8 @@
         {
           "name": "教学比赛2026",
           "path": "extensions/feishu-multi-group-team/teaching-competition-2026",
-          "description": "教师教学能力比赛备赛项目"
+          "description": "教师教学能力比赛备赛项目",
+          "demo": "examples/teaching_competition_demo.py"
         }
       ],
       "installation": {
@@ -433,7 +446,8 @@
         {
           "name": "教材编写团队",
           "path": "extensions/textbook-dev-team",
-          "description": "多维度评估教材质量"
+          "description": "6个话题AI分工协作编写教材",
+          "demo": "examples/textbook_writing_demo.py"
         }
       ],
       "installation": {
