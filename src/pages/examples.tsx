@@ -274,16 +274,13 @@ export default function Examples() {
                       查看对应模式
                     </Link>
                     {study.demo && (
-                      <a
-                        href={`https://github.com/openclaw/${study.id}/blob/main/demo.py`}
-                        target="_blank"
-                        rel="noopener"
-                        className="px-4 py-2 border border-slate-200 text-slate-600 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors flex items-center gap-2"
+                      <Link
+                        href={`/demo/${study.mode}?case=${study.id}`}
+                        className="px-4 py-2 border border-primary-200 text-primary-600 rounded-lg text-sm font-medium hover:bg-primary-50 transition-colors flex items-center gap-2"
                       >
                         <Play className="w-4 h-4" />
-                        查看演示代码
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
+                        观看演示
+                      </Link>
                     )}
                   </div>
                 </div>

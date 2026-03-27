@@ -178,16 +178,26 @@ export default function ModeDetail() {
           </Link>
         </section>
 
-        {/* Examples */}
-        {mode.examples && mode.examples.length > 0 && (
+        {/* Examples Detail */}
+        {mode.examplesDetail && mode.examplesDetail.length > 0 && (
           <section className="bg-white rounded-2xl p-8 shadow-md mb-8">
             <h2 className="text-2xl font-bold text-slate-900 mb-6">参考案例</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              {mode.examples.map((example: any, idx: number) => (
+              {(mode.examplesDetail as any[]).map((example: any, idx: number) => (
                 <div key={idx} className="border border-slate-200 rounded-xl p-6">
                   <h3 className="font-semibold text-slate-900 mb-2">{example.name}</h3>
                   <p className="text-sm text-slate-600 mb-3">{example.description}</p>
-                  <code className="text-xs bg-slate-100 px-2 py-1 rounded">{example.path}</code>
+                  <div className="flex items-center gap-2">
+                    <code className="text-xs bg-slate-100 px-2 py-1 rounded flex-1 truncate">{example.path}</code>
+                    {example.demo && (
+                      <Link 
+                        href={`/demo/${mode.id}?example=${idx}`}
+                        className="text-xs px-3 py-1 bg-primary-100 text-primary-700 rounded-full hover:bg-primary-200"
+                      >
+                        查看演示
+                      </Link>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
