@@ -53,7 +53,7 @@ export default function Guide() {
   return (
     <div className="min-h-screen bg-slate-50">
       <Head>
-        <title>使用指南 - {mode.name} - OpenClaw教师助手</title>
+        <title>使用指南 - {mode.name} - OpenClaw多智能体协作教师助手</title>
         <meta name="description" content={`${mode.name}完整使用指南`} />
       </Head>
 

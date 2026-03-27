@@ -9,8 +9,9 @@ export default function Header() {
   const navItems = [
     { href: '/', label: '首页' },
     { href: '/modes', label: '协作模式' },
+    { href: '/scenarios', label: '场景中心' },
     { href: '/examples', label: '参考案例' },
-    { href: '/docs', label: '使用指南' },
+    { href: '/contact', label: '联系我们' },
   ];
 
   return (
@@ -22,9 +23,12 @@ export default function Header() {
             <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
               <GraduationCap className="w-6 h-6 text-white" />
             </div>
-            <div>
+            <div className="hidden sm:block">
               <span className="font-bold text-slate-900">OpenClaw</span>
-              <span className="text-sm text-slate-500 ml-1">教师助手</span>
+              <span className="text-sm text-slate-500 ml-1">多智能体协作教师助手</span>
+            </div>
+            <div className="sm:hidden">
+              <span className="font-bold text-slate-900">OpenClaw</span>
             </div>
           </Link>
 

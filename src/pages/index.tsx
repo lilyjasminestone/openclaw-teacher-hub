@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Head>
-        <title>OpenClaw教师助手 - 多智能体协作模式选择</title>
+        <title>OpenClaw多智能体协作教师助手 - 模式选择</title>
         <meta name="description" content="为高校教师提供五种多智能体协作模式选择，覆盖教学、科研、项目管理全场景" />
       </Head>
 
@@ -286,7 +286,7 @@ export default function Home() {
                 <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">O</span>
                 </div>
-                <span className="font-bold text-white">OpenClaw教师助手</span>
+                <span className="font-bold text-white">OpenClaw多智能体协作教师助手</span>
               </div>
               <p className="text-slate-400">
                 为高校教师打造的多智能体协作平台，

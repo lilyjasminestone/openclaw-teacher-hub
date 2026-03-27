@@ -220,7 +220,7 @@ export default function Scenarios() {
   return (
     <div className="min-h-screen bg-slate-50">
       <Head>
-        <title>场景中心 - OpenClaw教师助手</title>
+        <title>场景中心 - OpenClaw多智能体协作教师助手</title>
         <meta name="description" content="40+教学场景，按教学、科研、专项、日常四大领域分类，快速找到适合您的多智能体协作方案" />
       </Head>
 
