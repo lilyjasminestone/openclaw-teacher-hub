@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { Search, BookOpen, Trophy, GraduationCap, FileText, Beaker, Award, Layers, ArrowRight, FlaskConical, Briefcase, Home, Lightbulb } from 'lucide-react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import modesData from '../data/modes.json';
 
 // 四大领域分类
@@ -413,6 +414,8 @@ export default function Scenarios() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, FileText, Video, MessageSquare, Layers } from 'lucide-react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import modesData from '../data/modes.json';
 
 const docSections = [
@@ -122,7 +123,7 @@ export default function Docs() {
   return (
     <div className="min-h-screen bg-slate-50">
       <Head>
-        <title>使用指南 - OpenClaw教师助手</title>
+        <title>使用指南 - OpenClaw多智能体协作教师助手</title>
         <meta name="description" content="OpenClaw多智能体协作系统使用指南" />
       </Head>
 
@@ -237,6 +238,8 @@ export default function Docs() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

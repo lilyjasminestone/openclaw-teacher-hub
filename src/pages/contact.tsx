@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Mail, Github, MessageCircle, Heart, Users, BookOpen, Sparkles } from 'lucide-react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Contact() {
   return (
@@ -179,6 +180,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

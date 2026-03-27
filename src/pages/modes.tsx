@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ModeCard from '../components/ModeCard';
 import modesData from '../data/modes.json';
 
@@ -8,7 +9,7 @@ export default function Modes() {
   return (
     <div className="min-h-screen bg-slate-50">
       <Head>
-        <title>协作模式 - OpenClaw教师助手</title>
+        <title>协作模式 - OpenClaw多智能体协作教师助手</title>
         <meta name="description" content="五种多智能体协作模式详细介绍" />
       </Head>
 
@@ -70,6 +71,8 @@ export default function Modes() {
           </div>
         </section>
       </div>
+
+      <Footer />
     </div>
   );
 }

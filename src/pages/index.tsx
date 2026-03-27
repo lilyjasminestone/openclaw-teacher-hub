@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Zap, Users, BookOpen } from 'lucide-react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ModeCard from '../components/ModeCard';
 import DecisionTree from '../components/DecisionTree';
 import modesData from '../data/modes.json';
@@ -277,43 +278,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-900 text-slate-300 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">O</span>
-                </div>
-                <span className="font-bold text-white">OpenClaw多智能体协作教师助手</span>
-              </div>
-              <p className="text-slate-400">
-                为高校教师打造的多智能体协作平台，
-                <br />让AI成为您的专业团队成员。
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-white mb-4">快速链接</h4>
-              <ul className="space-y-2">
-                <li><Link href="/modes" className="hover:text-white transition-colors">协作模式</Link></li>
-                <li><Link href="/scenarios" className="hover:text-white transition-colors">场景模板</Link></li>
-                <li><Link href="/guide" className="hover:text-white transition-colors">使用指南</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-white mb-4">相关资源</h4>
-              <ul className="space-y-2">
-                <li><a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener" className="hover:text-white transition-colors">OpenClaw GitHub</a></li>
-                <li><a href="https://docs.openclaw.ai" target="_blank" rel="noopener" className="hover:text-white transition-colors">文档中心</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500">
-            <p>© 2026 OpenClaw Teacher Hub. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

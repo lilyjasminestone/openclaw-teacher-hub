@@ -8,6 +8,7 @@ import {
   TrendingUp, Award, Target
 } from 'lucide-react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import modesData from '../data/modes.json';
 
 // 10个精选案例
@@ -354,7 +355,7 @@ export default function Examples() {
   return (
     <div className="min-h-screen bg-slate-50">
       <Head>
-        <title>参考案例 - OpenClaw教师助手</title>
+        <title>参考案例 - OpenClaw多智能体协作教师助手</title>
         <meta name="description" content="10个真实的AI协作成功案例，展示一人团队+多智能体的强大效能" />
       </Head>
 
@@ -624,6 +625,8 @@ export default function Examples() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <Footer />
     </div>
   );
 }

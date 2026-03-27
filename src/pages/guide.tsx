@@ -8,6 +8,7 @@ import {
   Download, Settings, Play, MessageSquare, Users, BookOpen, Code
 } from 'lucide-react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import modesData from '../data/modes.json';
 
 export default function Guide() {
@@ -449,6 +450,8 @@ ${mode.triggers.slice(0, 3).map(t => `  - "${t}"`).join('\n')}
           </a>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
